@@ -26,3 +26,4 @@ let text = (weather > 60) ? (weather < 90) ? "perfect" : "hot" : "Cold";
 console.log(text)
 
 //#3 - 
+//I cant figure this out bruh this is so much thinking
