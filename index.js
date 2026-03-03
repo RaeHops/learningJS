@@ -27,3 +27,13 @@ console.log(text)
 
 //#3 - 
 //I cant figure this out bruh this is so much thinking
+
+for (let i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+}
+
+function sayHello(name) {
+  return "Hello " + name;
+}
+
+let greeting = sayHello("John");
