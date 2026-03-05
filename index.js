@@ -21,19 +21,29 @@ if (a > 0){
 //#2 - Use ternary operator to decide if the weather is too cold, too hot, or perfect
 
 let weather = Math.floor(Math.random() * 134);
-console.log(weather)
+console.log(weather);
 let text = (weather > 60) ? (weather < 90) ? "perfect" : "hot" : "Cold";
-console.log(text)
+console.log(text);
 
 //#3 - 
-//I cant figure this out bruh this is so much thinking
+//Functions = reusable code blocks designed for particular tasks, functions are executed when they are called or invoked
+//you call a function by adding parentheses to its name (ex: name())
+//Parameters allow you to send values to a function, they are listed in parentheses in the function definition
+//a function can return a value back to the code that called it. The return statement is used to return a value from a function
+//theres more to functions but thats all beginner stuff
 
-for (let i = 0; i < cars.length; i++) {
-  text += cars[i] + "<br>";
+function calculateGravity(g, m, r) {
+  return g*((m)/r^2);
 }
 
-function sayHello(name) {
-  return "Hello " + name;
-}
+let result = calculateGravity(6.674*10^-11, 6.417*10^23, 1.149*10^13);
+console.log(result);
 
-let greeting = sayHello("John");
+//#4
+const calculateGravity2 = (g, m, r) => g*((m)/r^2);
+let result2 = calculateGravity2 (4, 6, 8);
+console.log(result2);
+
+//#5 - arrays
+
+const videogames = ["Fortnite", "Minecraft", "Rocket League", "The Finals", "Call of Duty", "Among Us", "Zelda Breath of the Wild", "Final Fantasy VII", "Devil May Cry", "Red Dead Redemption", "Elden Ring", "Pokemon ORAS", "Omori", "Stardew Valley","Terraria"];
