@@ -52,10 +52,41 @@ console.log(videogames[0]);
 console.log(videogames[14]);
 
 //I asked google how to get a random element and this is what it told me to do
-const randomIndex = Math.floor(Math.random()*videogames.length);
-const randomElement = videogames[randomIndex];
+let randomIndex = Math.floor(Math.random()*videogames.length);
+console.log(videogames[randomIndex]);
 
-console.log(videogames[randomElement]);
+videogames.sort();
+console.log("sorted array:", videogames);
+
+videogames.push("Marvel Rivals")
+console.log(videogames);
+
+videogames.push(67);
+console.log(videogames[16]);
+
+//#6
+//im guessing for this one you create an empty array first and then add the numbers later
+
+const randomNum = [];
+for (let i = 0; i<10; i++){
+    let num = Math.floor(Math.random()*(87-29+1)) + 29;
+    randomNum.push(num);
+}
+
+console.log(randomNum);
+
+for (let i = 0; i<randomNum.length-1; i++){
+    console.log(randomNum[i], randomNum[i+1])
+    let x = randomNum[i]
+    let y = randomNum[i+1]
+
+    let difference = y-x;
+    difference = Math.abs(difference);
+    console.log(difference)
+
+}
+
+
 
 
 
