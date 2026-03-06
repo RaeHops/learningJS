@@ -47,3 +47,15 @@ console.log(result2);
 //#5 - arrays
 
 const videogames = ["Fortnite", "Minecraft", "Rocket League", "The Finals", "Call of Duty", "Among Us", "Zelda Breath of the Wild", "Final Fantasy VII", "Devil May Cry", "Red Dead Redemption", "Elden Ring", "Pokemon ORAS", "Omori", "Stardew Valley","Terraria"];
+console.log(videogames.length);
+console.log(videogames[0]);
+console.log(videogames[14]);
+
+//I asked google how to get a random element and this is what it told me to do
+const randomIndex = Math.floor(Math.random()*videogames.length);
+const randomElement = videogames[randomIndex];
+
+console.log(videogames[randomElement]);
+
+
+
